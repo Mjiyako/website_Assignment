@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: size 10px;
+    font-family: 'Inter',sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*homepage Section*/
+#homepage{
+    background-image: url(./images/1671433550784.jpg);
+    background-size:cover;
+    background-position:0%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+#homepage::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .66;
+    z-index: -1;
+}
+#homepage .homepage{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+
+}
+#homepage h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+#homepage h1:nth-child(1){
+    animation-delay: 1s;
+}
+#homepage h1:nth-child(2){
+    animation-delay: 2s;
+}
+#homepage h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
+}
+
+#homepage h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(38, 255, 0);
+    animation: text_reveal_box 1s ease;
+    animation-delay: .4s;
+}
+
+#homepage h1:nth-child(1) span{
+    animation-delay: .4s;
+}
+#homepage h1:nth-child(2) span{
+    animation-delay: 1.4s;
+}
+#homepage h1:nth-child(3) span{
+    animation-delay: 2.4s;
+}
+
+#homepage .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(248, 245, 245);
+    background-color: transparent;
+    border: 2px solid rgb(38, 255, 0);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 33px;
+    transition: .3s ease ;
+    transition-property: background-color, color ;
+}
+
+#homepage .cta:hover{
+    color: white;
+    background-color: rgb(38, 255, 0);
+}
+/*End homepage Section*/
+
+/* Blog Section */
+.blog-title {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+#blog .blog-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#blog .blog-top span{
+    color: rgb(64, 173, 42);
+}
+
+#blog .blog-title{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+#blog .blog-container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+#blog .blog-box{
+    width: 350px;
+    background-color: white;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+
+#blog .blog-image{
+    width: 100%;
+    height: auto;
+
+}
+
+#blog .blog-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#blog .blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#blog .blog-text span{
+    color: rgb(64, 173, 42);
+    font-size: 0.9rem;
+}
+
+#blog .blog-about{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #272727;
+}
+
+#blog .blog-about:hover{
+    color: rgb(64, 173, 42);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+#blog .blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0px;
+}
+
+#blog .blog-text a{
+    color: #0f0f0f;
+}
+
+#blog .blog-text a:hover{
+    color:rgb(64, 173, 42) ;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+/* End of Blog Section */
+
+/* keyframe */
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+
+    }
+    
+}
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: rgb(38, 255, 0);
+        font-weight: 900;
+    }
+}
+/* End of keyframe */
