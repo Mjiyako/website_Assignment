@@ -15,6 +15,10 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
 .container{
     min-height: 100vh;
     width: 100%;
@@ -152,7 +156,7 @@ a{
 #blog .blog-box{
     width: 350px;
     background-color: white;
-    border: 1px solid #ececec;
+    border: 1px solid rgb(64, 173, 42);
     margin: 20px;
 }
 
@@ -196,7 +200,7 @@ a{
     color: #9b9b9b;
     font-size: 0.9rem;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1000;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -210,9 +214,77 @@ a{
 #blog .blog-text a:hover{
     color:rgb(64, 173, 42) ;
     transition: all ease 0.3s;
-    cursor: pointer;
+    cursor:pointer;
 }
 /* End of Blog Section */
+
+
+/* Design Section */
+.design-heading{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+#design .design-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#design .design-heading span{
+    color:rgb(64, 173, 42) ;
+}
+
+#design .design-heading h2{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+#design .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    min-height : 40vh;
+    max-height: 80vh;
+
+}
+
+.wrapper{
+    margin: 100px auto;
+    width: 95%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.wrapper img{
+    max-width: 550px;
+    float: left;
+    margin-right: 15px;
+    border: 3px solid rgb(64, 173, 42);
+    border-radius: 10px;
+
+}
+#design .text-box{
+    
+}
+
+#design .text-box h3{
+        font-size: 42px;
+}
+
+#design .text-box p{
+    font-size: 16px;
+}
+
+
+/* End of Design Section */
+
 
 /* keyframe */
 @keyframes text_reveal_box{
@@ -240,3 +312,29 @@ a{
     }
 }
 /* End of keyframe */
+
+
+/* media */
+@media(max-width:1250px){
+   #blog .blog-box{
+        width:300px;
+    }
+}
+
+@media(max-width:1100px){
+    #blog .blog-box{
+        width: 70%;
+    }
+}
+
+@media(max-width:550px){
+    #blog .blog-box{
+        margin: 20px 10px;
+        width: 1000%;
+    }
+
+    #blog{
+        padding: 20px;
+    }
+}
+/* media */
