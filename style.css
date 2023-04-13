@@ -51,8 +51,33 @@ p{
     text-align: center;
 }
 
- span{
+  span{
     color: rgb(64, 173, 42);
+}
+
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(248, 245, 245);
+    background-color: transparent;
+    border: 2px solid rgb(38, 255, 0);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 33px;
+    transition: .3s ease ;
+    transition-property: background-color, color ;
+}
+
+.cta:hover{
+    color: white;
+    background-color: rgb(38, 255, 0);
+}
+
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: black;
 }
 
 /*homepage Section*/
@@ -125,24 +150,7 @@ p{
     animation-delay: 2.4s;
 }
 
-#homepage .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: rgb(248, 245, 245);
-    background-color: transparent;
-    border: 2px solid rgb(38, 255, 0);
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1rem;
-    margin-top: 33px;
-    transition: .3s ease ;
-    transition-property: background-color, color ;
-}
 
-#homepage .cta:hover{
-    color: white;
-    background-color: rgb(38, 255, 0);
-}
 /*End homepage Section*/
 
 
@@ -473,7 +481,10 @@ p{
 
 
 
-
+#profile-service .service-top{
+    max-width: 500px;
+    margin: 0 auto;
+}
 #profile-service .service-bottom{
     display: flex;
     align-items: center;
@@ -506,7 +517,7 @@ p{
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg, #29323c , #485563 100%);
-    opacity: .4;
+    opacity: .7;
     z-index: -1;
 }
 
@@ -615,6 +626,156 @@ p{
 /* End of projects section */
 
 
+/* About section */
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .col-left {
+    width: 250px;
+    height: 360px;
+}
+
+#about .col-right {
+    width: 100%;
+}
+
+#about .col-right h2{
+    font-size:1.6rem;
+    font-weight: 520;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p{
+    margin-bottom: 20px;
+}
+
+#about .col-right .cta{
+    color: black;
+    margin-bottom: 40px;
+    border: 8px solid rgb(38, 255, 0);
+    font-weight: 600;
+}
+#about .col-left .about-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+    
+}
+
+#about .col-left .about-img::after{
+    content:'';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height:98%;
+    width: 98%;
+    border: 5px solid rgb(38, 255, 0);
+    z-index: -1;
+}
+
+/*End of About section */
+
+
+
+/* contact section */
+#contact .contact{
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#contact .contact-items{
+    width: 450px;
+}
+
+#contact .contact-item{
+    width: 80%;
+    padding:20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: .3s ease box-shadow;
+}
+
+#contact .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#contact .contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+/* End of contact section */
+
+
+/* footer */
+#footer{
+    background-color:rgb(64, 173, 42);
+}
+
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2{
+    color: black;
+    font-weight: 500;
+    font-size:1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+#footer p{
+    font-size:1.3rem;
+}
+
+
+/*End of footer */
+
+
+
+
 
 
 
@@ -654,6 +815,116 @@ p{
 
 
 /* media */
+
+@media only screen and (min-width: 768px){
+    .cta{
+        font-size:2.5rem;
+        padding:20px 60px;
+    }
+
+    h1.section-title{
+        font-size: 6rem;
+    }
+
+    #homepage h1{
+        font-size:7rem;
+    }
+
+    .profile-service .service-bottom .service-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    #projects .project-item{
+        flex-direction: row;
+    }
+    #projects .project-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    #projects .project-item{
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+
+    #projects .all-projects .project-img{
+        height: 100%;
+    }
+
+    #about .about{
+        flex-direction: row;
+    }
+
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+
+    #about .about .col-left .about-img::after{
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid rgb(64, 173, 42);
+    }
+
+    #about .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1{
+        text-align: left;
+    }
+
+    #contact .contact{
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-height: 20vh;
+    }
+
+    #contact .contact-items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #contact .contact-item{
+        margin: 20px;
+        flex-direction: row;
+    }
+    #contact .contact-item .icon{
+        height: 80px;
+        width: 80px;
+    }
+
+    #contact .contact-item .icon img{
+        object-fit: contain;
+    }
+    
+    #contact .contact-item .contact-info{
+        width: 100%;
+        text-align:left;
+        padding-left: 20px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    #profile-service .service-bottom .service-item{
+        flex-basis: 22%;
+        margin: 1.5%
+    }
+}
+
+
+
 @media(max-width:1250px){
    #blog .blog-box{
         width:300px;
