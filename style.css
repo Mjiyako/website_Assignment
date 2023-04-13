@@ -50,6 +50,7 @@ p{
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 
   span{
@@ -310,7 +311,6 @@ p{
     align-items:center;
     flex-direction: column;
     padding: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 
 #blog .blog-top {
@@ -318,7 +318,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: -497px;
 }
 
 #blog .blog-top span{
@@ -419,12 +419,7 @@ p{
 
 /* Design Section */
 .design-heading{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    padding: 30px;
-    border-bottom: 1px solid rgba(0,0,0,0.5);
+   margin-top: -500px;
 }
 
 #design .design-heading{
@@ -553,22 +548,16 @@ p{
 
 
 /* Essay Section */
-.essay-title {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    padding: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.5);
-}
+
 
 #essay .essay-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 50px;
+        flex-direction: column;
+        text-align: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 100px 0;
+        margin-bottom:-550px;
+        margin-top:-950px;
 }
 
 #essay .essay-top span{
@@ -584,6 +573,7 @@ p{
 
 #essay .intro-essay{
     margin: 30px;
+    margin-top: -400px;
 }
 
 #essay .mid-essay{
@@ -617,6 +607,14 @@ p{
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
+}
+
+#profile-practice .practice{
+        flex-direction: column;
+        text-align: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 100px 0;
 }
 
 
@@ -691,6 +689,10 @@ p{
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
+}
+
+#projects .section-title{
+    margin-bottom:50px;
 }
 
 #projects .projects-header h1{
