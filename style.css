@@ -334,22 +334,24 @@ p{
 #blog .blog-container{
     display: flex;
     justify-content:center;
-    align-items:center;
+    align-items:top right;
     margin: 20px 0px;
     flex-wrap: wrap;
+    margin-top: -200px;
+    
 }
 
 #blog .blog-box{
     width: 350px;
     background-color: white;
     border: 1px solid rgb(64, 173, 42);
-    margin: 20px;
+    margin-bottom: 340px;
+    margin-left: 80px;
 }
 
 #blog .blog-image{
     width: 100%;
     height: auto;
-
 }
 
 #blog .blog-image img{
@@ -357,7 +359,9 @@ p{
     height: 100%;
     object-fit: cover;
     object-position: center;
+    margin-top: -1000px;
 }
+
 
 #blog .blog-text{
     padding: 30px;
@@ -462,6 +466,7 @@ p{
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    margin-top:-700px;
 }
 
 .grid-wrapper {
@@ -486,7 +491,7 @@ p{
 }
 
 .style-title {
-    margin-top: 200px;
+    margin-top: -300px;
     font-size: 2.4rem;
     color: black;
     font-weight: 600;
