@@ -655,11 +655,12 @@ p{
 }
 
 .essay-image img{
-    width: 85%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    margin: 100px;
+    width: 95%;
+    height: 190px;
+    object-fit:contain;
+    object-position:center;
+    margin: 30px;
+    
     
 }
 
