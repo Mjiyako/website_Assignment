@@ -352,6 +352,17 @@ p{
     border: 1px solid rgb(64, 173, 42);
     margin-bottom: 340px;
     margin-left: 80px;
+    margin-top: -150px;
+}
+
+#blog .blog-boxx{
+    width: 350px;
+    background-color: white;
+    border: 1px solid rgb(64, 173, 42);
+    margin-bottom: 340px;
+    margin-left: 80px;
+    margin-top: -150px;
+    margin-bottom: -20px;
 }
 
 #blog .blog-image{
@@ -448,6 +459,7 @@ p{
     font-weight: 600;
 }
 
+
 .grid-wrapper img{
 
     margin-top: 400px;
@@ -494,6 +506,8 @@ p{
     grid-column: span 2;
     grid-row: span 2;
 }
+
+
 
  .container .style-title{
     margin-top:-700px;
@@ -657,6 +671,15 @@ p{
 .essay-image img{
     width: 95%;
     height: 190px;
+    object-fit:contain;
+    object-position:center;
+    margin: 30px;
+    
+    
+}
+.essay-imagee img{
+    width: 95%;
+    height: 600px;
     object-fit:contain;
     object-position:center;
     margin: 30px;
