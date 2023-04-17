@@ -428,15 +428,6 @@ p{
 
 
 
-
-
-
-
-
-
-
-
-
 /* Design Section */
 .design-heading{
    margin-top: -500px;
@@ -626,11 +617,6 @@ p{
 
 
 
-
-
-
-
-
 /* Essay Section */
 
 
@@ -686,15 +672,12 @@ p{
     
     
 }
-
-
 /* End of Essay Section */
 
 
 
+
 /* Services Section */
-
-
 #profile-service .services{
     flex-direction: column;
     text-align: center;
@@ -770,8 +753,6 @@ p{
     color: white;
     text-align: left;
 }
-
-
 /* End of Services Section */
 
 
@@ -859,10 +840,14 @@ p{
     transform: scale(1.1);
 
 }
+
 /* End of projects section */
 
 
+
+
 /* About section */
+
 #about .about{
     flex-direction: column-reverse;
     text-align: center;
@@ -920,7 +905,9 @@ p{
 
 
 
+
 /* contact section */
+
 #contact .contact{
     flex-direction: column;
     max-width: 1500px;
@@ -967,10 +954,13 @@ p{
 #contact .contact-item:hover{
     box-shadow: 0px 0px 5px 0 #0000002c;
 }
+
 /* End of contact section */
 
 
+
 /* footer */
+
 #footer{
     background-color:rgb(64, 173, 42);
 }
@@ -1006,7 +996,6 @@ p{
     font-size:1.3rem;
 }
 
-
 /*End of footer */
 
 
@@ -1015,14 +1004,8 @@ p{
 
 
 
-
-
-
-
-
-
-
 /* keyframe */
+
 @keyframes text_reveal_box{
     50%{
         width: 100%;
@@ -1036,18 +1019,20 @@ p{
     
 }
 
-@keyframes text_reveal{
+ @keyframes text_reveal{
     100%{
         color: white;
     }
 }
-@keyframes text_reveal_name{
+
+ @keyframes text_reveal_name{
     100%{
         color: rgb(38, 255, 0);
         font-weight: 900;
     }
 }
-/* End of keyframe */
+
+ /* End of keyframe */
 
 
 /* media */
@@ -1152,7 +1137,7 @@ p{
         padding-left: 20px;
     }
 }
-@media only screen and (min-width: 1200px){
+ @media only screen and (min-width: 1200px){
 
     #header .hamburger{
         display: none;
